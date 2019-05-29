@@ -1,0 +1,6 @@
+a = " xin chào đồng tính! "
+def  nói ( a ):
+    a =  " đại học vinh "
+    in (a)
+nói (a)
+in (a)

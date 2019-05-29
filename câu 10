@@ -1,0 +1,6 @@
+nhập môn toán
+r = float ( đầu vào ( "cầu hôn bán ạc vòng -> " ))
+chuvi =  2 * math.pi * r
+dientich = math.pi * r * r
+print ( " chu vi kẹp tron ​​có bán kinh {0} là -> {1} " . format (r, chuvi))
+print ( " tích hợp kiểu vuông tron co bán kinh {0} là -> {1} " .format (r, dientich))

@@ -1,0 +1,4 @@
+a, b = 0 , 1
+trong khi b < 1000 :
+    in (b, end = "  " )
+    a, b = b, a + b

@@ -1,0 +1,4 @@
+def  tổng ( a , b ):
+    trả lại a + b
+c = tổng ( 4 , 5 ) ;
+in ( " tổng của 4 và 5 = "  +  str (c))

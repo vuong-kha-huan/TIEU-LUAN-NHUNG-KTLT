@@ -1,0 +1,32 @@
+# This program computer execution of phép tính đơn giản
+# Hàm số hai số
+def  thêm ( x , y ):
+    trả lại x + y
+# Hàm Bộ số hai
+def  trừ ( x , y ):
+    trả lại x - y
+# Hàm số hai số
+def  bội ( x , y ):
+    trả lại x * y
+# Hàm chia hai số
+ chia def ( x , y ):
+    trả lại x / y
+in ( " Chọn thể thao. " )
+in ( " 1.Thêm " )
+in ( " 2.Subtract " )
+in ( " 3. Nhiều lần " )
+in ( " 4.Divide " )
+# Lấy input
+sự lựa chọn =  đầu vào ( "trong trò chơi (1/2/3/4): " )
+num1 =  int ( đầu vào ( "Phần mềm và phần mềm : " )
+num2 =  int ( đầu vào ( "Phần mềm số hai: " ))
+
+nếu lựa chọn ==  ' 1 ' :
+    in (num1, " + " , num2, " = " , thêm (num1, num2))
+lựa chọn elif ==  ' 2 ' :
+    in (num1, " - " , num2, " = " , trừ (num1, num2))
+lựa chọn elif ==  ' 3 ' :
+    in (num1, " * " , num2, " = " , nhân (num1, num2))
+lựa chọn elif ==  ' 4 ' :
+    in (num1, " / " , num2, " = " , chia (num1, num2))
+khác : in ( " Đầu vào không kết hợp " )

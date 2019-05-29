@@ -1,0 +1,113 @@
+@@ -0,0 +1,113 @@
+bai1
+n1 = int (đầu vào ("nhập giá trị n1"))
+n2 = int (đầu vào ("nhập giá trị n2"))
+nếu n1> n2:
+    in ("n1 là lớn")
+khác:
+    in ("n2 là lớn")
+
+    bai2
+ nhập môn toán
+x1 = int (đầu vào ("nhập x1 --->"))
+y1 = int (đầu vào ("nhập y2 --->"))
+x2 = int (đầu vào ("nhập x2 --->"))
+y2 = int (đầu vào ("nhập y2 --->"))
+d1 = (x2-x1) * (x2-x1)
+d2 = (y2-y1) * (y2-y1)
+res = math.sqrt (d1 + d2)
+in ("Cách từ dơi 2 điểm là", res) 
+
+
+bai3
+n = int (đầu vào ("trong số một số --->"))
+nếu n% 2 == 0:
+    in ("Số chẻ")
+khác:
+    in ("Sốt")
+
+ BAI4
+ i = 1 ;;
+cho j trong phạm vi (2,10):
+    in ("i:", i, "j:", j);
+    in (i, "/", j);
+    in (i / j) 
+ BAI5
+n = int (đầu vào ("số một số ---->"));
+trong khi n> = 0:
+    in (n);
+    n = n-1
+BAI6
+j = []
+cho tôi trong phạm vi (2000, 3201):
+    if (i% 7 == 0) và (i% 5! = 0):
+        j.append (str (i))
+        in (','. tham gia (j))
+BAI7
+n = int (đầu vào ("trong phần mềm số một:"))
+d = dict () a, b = 1,2
+tổng = 0
+in (a, end = "")
+trong khi (a <= 4000000-1):
+    nếu% 2 == 0:
+        tổng + = a
+        a, b = b, a + b
+        in (a, end = "")
+    print ("\ n tổng của các ứng dụng trong số đó trong mục Wikipedia:", tổng cộng) 
+
+
+cho i trong phạm vi (1, n + 1):
+    d [i] = i * i
+    in (d) 
+bai8
+a, b = 1,2
+tổng = 0
+in (a, end = "")
+trong khi (a <= 4000000-1):
+    nếu% 2 == 0:
+        tổng + = a
+        a, b = b, a + b
+        in (a, end = "")
+    print ("\ n tổng của các ứng dụng trong số đó trong mục Wikipedia:", tổng cộng) 
+bai9
+str = input ("Nhập chuỗi:")
+dict = {}
+cho n trong str:
+    khóa = dict.keys ()
+    nếu n trong các phím:
+        ra lệnh [n] + = 1
+    khác:
+        dict [n] = 1
+    in (chính tả)
+bai10
+a = "chào tôi là Tú tôi là người săn lùng"
+b = a.split ()
+in (b)
+c = "" .join (b)
+in (c) 
+bai11
+i = [1, 'trăn', 4,7]
+k = ['cse', 2, 'guntur', 8]
+m = []
+m.append (i);
+m.append (k);
+in (m)
+d = {1: 1,2: k, 'kết hợp_lít': m}
+in (d) 
+bai13
+nhập môn toán
+a = int (input ("nhap liên số a ->"))
+b = int (đầu vào ("nh phiên bản số b ->"))
+c = int (đầu vào ("nhâp dòng số c ->"))
+đồng bằng = b ^ 2 - 4 * a * c
+nếu đồng bằng <0:
+    in ("cường độ vo vo")
+đồng bằng elif == 0:
+    x = -b / 2 * a
+    in ("cường điệu có âm kép", x)
+khác:
+    x1 = (-b + math.sqrt (delta)) / 2 * a
+    x2 = (-b - math.sqrt (delta)) / 2 * a
+    in ("cường độ có hia từ chối")
+    in (x1)
+    in (x2)

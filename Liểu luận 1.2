@@ -1,0 +1,54 @@
+//Ho va ten: VUONG KHA HUAN 
+//MSSV: 1755252021600033
+#include <REGX52.H>
+
+char ma7thanh[] = {0x40, 0x79, 0x24, 0x30, 0x19, 0x12, 0x02, 0x78, 0x00, 0x10, 0x89, 0xC7, 0x40};
+
+char i;
+
+int dem;
+
+unsigned char chuc, donvi;
+
+#define LED1 P2_0
+#define LED2 P2_1
+#define sang 0
+#define tat 1
+
+char i;
+
+void delay()
+{
+	TMOD = 0x01;
+	TH0 = 0xD8;
+	TL0 = 0xF0;
+	TR0 = 1;
+	while(!TF0);
+	TF0 = 0;
+	TR0 = 0;
+}
+
+void main()
+{
+	LED1 = LED2 = tat;
+	while(1)
+	{
+		for (dem = 0; dem <= 37; dem++)
+		{
+			chuc = dem/10;
+			donvi = dem%10;
+			for (i = 0; i <= 20; i++)
+			{
+				LED1 =  sang;
+				P0 = ma7thanh[chuc];
+				delay();
+				LED1 =  tat;
+			
+				LED2 = sang;
+				P0 = ma7thanh[donvi];
+				delay();
+				LED2 = tat;
+			}
+		}
+	}
+}

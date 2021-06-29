@@ -1,0 +1,70 @@
+//Ho va ten: VUONG KHA HUAN 
+//MSSV: 1755252021600033
+#include <REGX52.H>
+
+#define OUT	P2 	
+#define D1		P3_0	 
+#define D2		P3_1	  
+#define D3		P3_4	 
+#define D4		P3_5	
+#define BUT		P3_2	  
+unsigned char ma7thanh[10] = {0xC0, 0xF9, 0xA4, 0xB0, 0x99, 0x92, 0x82, 0xF8, 0x80, 0x90};
+
+char a, b;
+unsigned char dem;
+void delay(unsigned int t)
+{
+ 	unsigned int i,j;
+	for(i = 0; i < t; i++)
+	for(j = 0; j < 100; j++);
+}
+
+void quet_led()
+{
+	D1 = 0;
+	OUT = ma7thanh[a/10];
+	delay(1);
+	OUT = 0xff;
+	D1 = 1;
+	D2 = 0; 
+	OUT = ma7thanh[a%10];
+	delay(1);
+	OUT = 0xff;
+	D2 = 1;
+	D3 = 0; 
+	OUT = ma7thanh[b/10];
+	delay(1);
+	OUT = 0xff;
+	D3 = 1;
+	D4 = 0;
+	OUT = ma7thanh[b%10];
+	delay(1);
+	OUT = 0xff;
+	D4 = 1;
+}
+void nut_nhan()
+{
+	if(!BUT){
+		a++;
+		if(a > 27)a = 0;
+		while(!BUT);
+
+	}
+}
+
+void main()
+{
+	delay(500);
+	while(1)
+		{
+			nut_nhan();
+			quet_led();
+			dem++;
+			if(dem > 1)
+				{
+					b++;
+					dem = 0;
+					if(b > 27) b = 0;
+				}
+		}
+}

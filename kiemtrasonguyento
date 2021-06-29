@@ -1,8 +1,0 @@
-n = int (đầu vào ('nhap n:'))
-i = 2
-trong khi (n% i! = 0):
-   i = i + 1
-nếu n == i:
-    in (n, 'la so nguyen to')
-khác:
-    in ('khong la so nguyen to')

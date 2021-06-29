@@ -1,0 +1,8 @@
+cho num trong phạm vi (0,100):
+    cho i trong phạm vi (2, num):
+        nếu num% i == 0:
+            j = num / i
+            in (num, "khong phai so nguyen to")
+            phá vỡ
+        khác:
+            in (num, "la so nguyen to")

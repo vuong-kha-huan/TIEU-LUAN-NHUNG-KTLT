@@ -1,0 +1,11 @@
+i = 2
+trong khi (i < 100 ):
+    j = 2
+    trong khi (j <= (i // j)):
+        nếu tôi % j == 0 :
+            in ( " % d khong phai la so nguyen thành " % i)
+            phá vỡ
+        j = j + 1
+    khác :
+        in (i, " la so nguyen to " )
+    i = i + 1
